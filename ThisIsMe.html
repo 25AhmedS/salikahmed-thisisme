@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This Is Me</title>
+    <link rel="stylesheet" type="text/css" href="ThisIsMe.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://lh3.googleusercontent.com/Jev6TN15uez0bIUwHuZ3BtuEUqaeo35XDYpbUYTeUaZZOWw65az1doaoB_dBONnwz67EkWNoDW6bLCQdhet6MirOz0Cfp0NER-1Om7u3fdFKx7zoeWdLe8JDBsiQ5d3seYa6BLrgm0Y1QYyf6sjfWFSM_DsPTHQxuMAlF1_JAwXQ-SGM_KCRGmYXDUGi_xV85bqzPjbabzNHSEGNbzJMM-cGibVph01eYeRUEAbe_ueQ0r4o4OH_DysUk_OhtbsjQ4BPAWNQOe6LH5iYoMyXkm3gVoqmRBoGCltIOgO7FKz4uOJoGFLniPi_10PSzSUfr_o45VDTp5goi3WCnjARTKuLKV0Q4Zy08kOn0LEoaLo5gAeheCg_dvTU9mpIX0bM9evIZn47DwZBW9YiPNTaeddboxq7FZYYo5Wsdjx4qflqOJDNskmhQUBKAXgoYmE1OsIX2D9hhb4DyHJdp5eSaypH6kuxzcWt_xbFApFnX0Wde2QAF7A4fhNNjRq6uB7bteo0GLX1lopJOU_x8EkJWy_wtbhngduZrc7CBC4v3akSGJ5yAmEFCRCr2Ju8jIBCJSo6HnsDSNzJg_ula0nZSsmcsPWExsesBKJ1fjaVDbSphlgTu1EfeKr5lkxJVfBkTgP1Bxbzem3v5sOwZc5goZrFVNEUm1zKXe6D_xtmK_8xuI9N0cE1j0w7XElYIKoL7gzoyNsJkih95JRcJyXeDSwhFW3ebu6xpGcjfdmB9gLEx0kYIBF5oB-Pty8rWTnjzo8_BrXF7jKW6FEpUIeZ3FX0UwFlPbDpu9VZEgbn0a8CJu_RX6PRErO4nSFe-QJvkyWOuDrWiaLkcbXZDmyRgT3jaoOaRXIXb81hWE1wnGuYuZBuApCOuljPhCon_qRc2yNfIj8RhVZ3qzKPXhx9ZURg_5SJCVTIf-K04Il1uHNTUH9MIjKDWroX2vQA8afcHhFrP1B2e7UUfvZQFZihHSifPCwJd6lfRiMK8KTSAoy1Y5_ePCEfsdGF4bBYyzZlzQEBexnTU5ZJo_ql1pAP9C4=s500-no?authuser=0"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="header" id="home">
+      <h1>THIS IS ME</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#aboutMe">About Me</a>
+      <a href="#art">Art</a>
+      <a href="#rockClimbing">Rock Climbing</a>
+      <a href="#music">Music</a>
+      <a href="#fitness">Fitness</a>
+      <a href="#goals">Goals</a>
+      <a href="#bookList">Book List</a>
+      <a href="#honors">Being an Honors Student</a>
+      <a href="#values">Values</a>
+      <a href="#roleModels">Role Models</a>
+      <a href="#photoGallery">Photo Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="card">
+      <div class="fakeimg" style="text-align: center">
+        <img
+          src="https://preview.redd.it/do-the-hard-work-wallpaper-v0-tu28f0uvbow91.png?width=1920&format=png&auto=webp&s=cde47933f7f77f7c49599e467d67230c1144bba3"
+          alt="do the hard work"
+          height="400"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card" id="aboutMe">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height: 275px">
+            <img
+              src="https://lh3.googleusercontent.com/6zXUit5PBwhzSAl318-Va3h8LgfshI6n33wl0GnXORdcqXHOW20BjFwK7u0mwMsvCbfWqCT38kQaDOWNCfhcHJymLwvwA0wYEDXr3mBJffreIVyhXAm_RjbCOZ79Fh6q5-oY7LO3ZrsgSKVY7j2WMO0ELAEFwTflqttjM-RocFNjQAVREXAfCYJ6RbuBKshMNZ7hbrGsS_72LWJICIWj-BqtZO1f5dPVgQsJKcIY5f2rI7e4fpZmIKHx397MGX4qRGEE0Wj2zvVO9Gad7TpbenCCb7FK30QKUsDn4VLCJhNZ7vXJlCgH4Gi9eWuO0uqss0GKbuz9siNvdjS8UYE5J5-Nx1i-CaZlDWPrJvKscff5d_L9gBdATDo2Kw75iJIUDZ6aceESazJeDxY2ns1jk5b5QneR9HTEXhCam7NXPbphXTO2ltUQa0shzTCzUzi0DqdZ8bGaZpMbn8MVdY6b1N_iiHMa2Ks2d7j9BDKbEqi9c_2J6ZZ09Szqm6LOGOlcb01xhYWdamnlA52IL-DU5hL8uMmhsPaVWQIYNVuhmXvEyuKSKveQqGunT9U7C3NJGPmWh2aRi8di9R9038hmHhrL076K-g_tGkpz5hbAKRpOJxdf96YdofTvUuDpuis1XjKIViRDaN1TalnW5uzv2hh5Td2qysLe2WjKX25zhV2PMMY3OncyKcS9pA3rkHnSdx20n_6S6uQNuzyFoZ3T0bjihEdodpnzow1hGqL-egxBrikiPf_e8_A1rw6oc8T-Ttx9iH5UMfuqTtKXK8x8dtpUrhhre0DawDDHRMmtOhx_lNAo1g3ZB9adtxFo9GaeyXQEiut4aiF0rto_cbxMSnFCPCbrIwRjZfABvG_Dt48YR4SbtFWvrXCEQwgIqCUgKajUJPA6doUzjpyoJWCU76Yoojtd0ymm8fmUEsFLcACEZYbh972t44utr2E4qc6ei6QwgT3ZkXggDdT4ACGTK0Wj1dF8C_eqwHcZgBoK9EGoPIRg-yQtxC8Gb_UMGsOt815gr79dJbi2mD16bo5io8I=w2104-h1578-no?authuser=0"
+              alt="tecles"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/aL99hWUr7WUM-2Kt_w5rFBhphjQSDcwFS8_XKz0i5RdkeNJ-x-OomHFSZIe1bKiS1sxrgljYScP6LuJAqADZBxCL8gsIPOhcHI5UHsP4pppNykdD6DeA6FwSnlGSb_7qQjEgHI3S-emY9_5a16B-iKoyeCUDz9pwRqdpOu0oM7qfCaZ-orgw5xvqPNy-B1g3kXaW4BSXacGH0B08-81lxIMPGsXJlZ-H0uKRWeC75rjBvbHCE752vX2GkN4GJ1eSSiZG8J4yZSZo8iyOBiCIBC4LA8wf5RpxRpkCbgDC6t83ZgSnu0y0GgnLiK2oiL9kB-X1wWHxkW_U9gPM0UeLQknDgumfnlO7h2LIy2Ehi6vPJlPwdBZj0wfvG9iZVPRll-9pKp308u68opT4Lm3YosL9Zo-fkO-ZqUUJ1JZ5jVEpDwttzGOvQzkgM-uZIGrYC7299bsgXhqK60bmx1lexbil16eKXyB5bV21zn2vdBxzF5iqhR_shG_09Sqj7LRC0J0heqSY40eBfeFPnONHmro_MMEsqH6_Rua_8cThg-2KSkCX08eAY6QEGHcEFk8FaczuUEPJhkEzY61UQP4wDhbI6MoC0dd3toQqW4a-95jThNsRFuTPXvK3a48qW7n-K5BcKU09RlzpHYdRd9ZsMbp9l0dwEXPv7qvoKaHHNJ1mXg06HFnPVUYDGnbGvpXLQlUhiRI0HRSroSbHj7CfijH7x9a8vFtwKNNV63LJhgZmZ9bRUvO4MkVmv_a3WtAqg1LiVvmUulZOoX4gK-Io7jo1_xoywLirExIZx3NBuyzWYKe15KMXmvft6u4WszgDEaYTH_gyPDLxidRLilSc8luqzfqmdOIGujmVL1RKj2NncgWP-YIvYJRT9oSWurVtjpNSrgqe9kBd2G-9f7u9cLkJI1Xv4z0_w3C8_2BbFPfHG8FsSvf_ooUKw_HZD9EPgfvYS5TzpMfM9u36cWXsjcIGyL7UfSO1O75xWlEitbw3jpKLVFIPRlbr4A3xaIU604GGMcJPIpg-o2WW9g5NPl4=w1416-h1578-no?authuser=0"
+              alt="flying"
+              height="225"
+            />
+          </div>
+          <p class="big">Who am I?</p>
+          <p class="big">
+            Well, my name is Salik Ahmed, and I'm a 15 year old on his
+            self-improvement journey.
+          </p>
+        </div>
+
+        <div class="card" id="art">
+          <h2>Art</h2>
+          <div class="fakeimg" style="height: 200px">
+            <img src="" alt="225" height="225" />
+          </div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="rockClimbing">
+          <h2>Rock Climbing</h2>
+          <div class="fakeimg" style="height: 300px">
+            <img
+              src="https://lh3.googleusercontent.com/07-GmSaM7ZIwR3lx0UFGjvHREuPkEt_yAulPR8O4saYFV3ZMtbpt3-mDQZzhWfjEvCw7Der2eheeJJGKAdpFzSYHuB6CSjU9HBL4tYWHuIcZosaoj2wIupHXi2Vc5JjH9R2sHodkZI_e8WJm4ui9Vz042AqvjDXPKQJBKCTx6NibBWDXNduoZhpfq1fb01wGzGQ-ICrU9tJJAnH9GAza0p4-3Z4-RECFh3XkAx_JXorUPqCL6vLmRvnJA_mRNS5tmUzYFdoqLVkQsLMeJr95Tzi9WLH1YLniZsYrUE6o9qH52Rahs2sdMb5rWLfqqML7egXyeY3-1JfXLPE07TR3zIptat3u-mtk9lPOseCddfvwp8PYspo9IgWmt954Zhm5O4XOnyefyfYK1CXC8gLFbpC7aujTYHd6cUcsN6tLa7KoQ57HDqO-QAyAwB-QibZoJ_wAOZBle2q2Xctyz835bEpm9V0t71O7PRGYj6Ks1ait9eh6s1PA_d-RhSQePQpvCFygpJ97jlOl3zjNv3BRcEAHoeCbbMzZOvEks-rVIDxKnPLbrAdFjgpmN5MCl4wkb27WGFku-PvsbuNd07mbiuw3OfMxghLSF8Xo59EAHqwVKcZfHCZSJhyQAU10iS7zA6HvogmGmiAMMt8RvrdJZ5BEwFTL4MaaXK5rjMEaaRHVKD2-NsxZbVXwhDUwP49Zm1CCQkbglI4GWanDqPz6k5HG_DlIIJpw2YfKqoKBBA1WELVxa-s5I8Vbw8obgcfzT76jrNMZEqe-_nF7cny3xFdXjlUJFXGYauVpPSrxwI-wBWMXOZXcMJFBCe-HyvShw6RcAbO3VzCOjT24tL4Hqw84HrMpatZ6TuDzt_3LMnjq1hjOFypg2pByqOVUIxVldSE89_3wIUK7beX3jmM4rRAVwT2uiTvqwdRNfAEQGIin1wqrbaXKH6cB3Knt95m8cB0_6pSKm0ziRD9TX3mgqPsoNnxKL9IglHJnTe_yyTl4-C1t7GR6U7XaORGXRffnePKWrFRM18021qL1gQq_ALA=w1052-h1578-no?authuser=0"
+              alt="me"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/gqY4seQW236CRYvix9R9QuCXNyGDVAnTQymtjs3sJ3RtSQk4dbbv3u71et7uhOlqe7YgfyblxHVo-Os3CyvJ76voHpuPDaN9XdKcE_wisgVDAkJs2FWJgf0JCO8V4fTV1rPwTeHWlhefyZRLw0AxTkpbPLE8Z66ptv2yAVQrxC1egrjbPERG-6UqFjlgTOLTziku4HsIaOsufqaX6a0WhWGBGh9brXl-d2mrnWAAesCos9ERjTapn8jvjzD0mcvGQy9_pxfNovOlkeoHT7H0wH-oYLFqgQDx4SeCgpAP62ih3RpvQY6l0UaTvrWmh64mXqjRJZc-gHXc3NWyUsJu1snAHtRLKrh8W4OkZN6pv6g96UhRst8sy_DmjsuEddl9U-1oSMRWVCBEts9A8jqQtbXOgUzTmZb4LJVWfuasQ71n3v51NNXlHEAFB5WyqhnJYohxwRmWDe4KDTUyAgRICK85GtLCAjOmr8LFFDIXYIzRVHZhPKA1h8K2JzAk7t_E7CPLC0-e6-8chdH4C8yGW8MN8aGwW_xIme0UfcM9--xgEmDkEiqU8-rahenTWdhmwSwdqQFFsJrdJozCDWtkznC1zxiuQXdj_rGwuow8A03v_PCHhcrpsW6ml2CgHrWkMRYZjj_ubzhFzc850LAc6zZPlaV-PSpEN-LYHHFeLpV0ojyTxQfvrdjzNV8Q1_naGRXf0-hgg4WkVRoRXB3MbfZ9kgONqr0OaytDxglrfEgY2VRCGfjc_9YvcUGY33gicsjHz1z0u1TH3gP3IyxtsVqwPTblVs2-iQS-CExQu25YfuDJ8gkBHLyXyu9GoNjQZm9-xstkE60Fjgaxuoe69FjGRkPFg6p9EdwPxZLdaQFtGz7wqLTHRWoVJ1n5maPMklq8t0_MJdxRgp87MryzBPlYJ4n_kj1S-HNAch-fbaTUazfMgzAmssFEpQku0BSxOAwElj4uMPYcVZwSOdzuIY41mIm4tHIMxUovijGuztcQiKdzmdChtZizPwnKbxFHPup0Oru77boe3jLIKpdZzBk=w1016-h858-no?authuser=0"
+              alt="me2"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/_oke0PRKT3VpMKjkj9LhiE_AgP6mEOO0p-Q1nYi4fLTyNZ556Wn4GUMzmIsZhhIYOJjoVWBHS6UNwZ3E01_InUCDZRddGoBZUkCzhKYmbjxyxP1iIeJ_9wKcC167EhHhwRGhrhB4HSgP8o-VtJnH1LuEMh7VfB6tJTT9I0AbQLQ27tIoOfYPJ2dDFWOkK0fqIuKpw_9MCXNRgzW_M7rLm0JQeEokgdNFigqZnQK-7kX1LqMGCQAnlLRiILIdM8QcRUwFg42LZ6EB_ch-rCgMagsK96QP_Y2RQGnvwTD14Ugzoa6W9XnCsQv6eMfDMJ2ph9sHoxHjKwTR4mKe6JBeoGu0gE266BoM3AS4N4hKEI2awZch0OQ-T1YAJSnBPugAdCSNQfaj_hhfrSm2UEVD6UoUndo15uxtbSVtbH1IwyaQsuKS-ai69d0HDxti5caSSPMexn6dV5Cf4kCqNjXhzqh7yP0Hwb9eVEqaViJbOo3ftS1WwEPFfFbLer6oHxNEP-8WMauVL4Qgip1TlpiupZa9R1_juezHvD38Ux6FnxDoxukML_Rxlq4VVdWBRqD-cTEOFwPSx7FOwXDvvZnK3ZxtM-NaDIJHVbQ096H-JWk2j7w4zy06bD_DS1cNaLLiVFWQ4IHjIPyB3rjnZA68HgWclmqqjPbBtXE2h0bBG2vOVNkMFtWTcfYKzubEbWWvjBinw7R8sjsh1xDs74fhUu9uJT0-Vj5kjiff5hfieAj2Bga3YR8HDO3xD1cOkW1o_c5nGfNyndX3Zu1wX6rpAhjltNmPCeaeklVoACPKshM4WFW5S25vvecHPrzVfqDdYW4HJ9cz9fO6Dt_pYhdI6WOOylJYu34qZ3FUEcKRsEFWDIeVjZ4eAP-hcPxj_XuXzaw5ND_Sw3zwkw8j1dIMbbYJa6q4k7dgHLolsZ_RMPHoedRS-kotBjGRTqySWlEu6fXPkRPgJrY3_7llGtBCGGgjt1QyPhfIbAjtvnQrmGc4sm2zT7_7o0qG9zgNY-LhNhr7Cs7va22W_L92wMHkqrM=w1184-h1578-no?authuser=0"
+              alt="winner"
+              height="225"
+            />
+          </div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="music">
+          <h2>Music</h2>
+          <div class="fakeimg" style="height: 275px">
+            <img
+              src="https://assets.stickpng.com/images/58a9943ac85cc42c9221c512.png"
+              alt="piano"
+              height="225"
+            />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img
+              src="https://www.audio-issues.com/wp-content/uploads/2012/06/Production-Club-2.jpg"
+              alt="musproduct"
+              height="225"
+            />
+          </div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="fitness">
+          <h2>Fitness</h2>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="goals">
+          <h2>Goals</h2>
+          <div class="fakeimg" style="height: 230px">
+            <img
+              src="https://cdn.vox-cdn.com/thumbor/M90m3_scc2YPFE3IaQMkDBE8LdE=/0x0:404x296/1200x0/filters:focal(0x0:404x296):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/2371404/A_.0.png"
+              alt="a+"
+              height="225"
+            />
+          </div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="bookList">
+          <h2>Book List</h2>
+          <div class="fakeimg" style="height: 300px">
+            <img
+              src="https://images.penguinrandomhouse.com/cover/9780140280197"
+              alt="48 laws of power"
+              height="225"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/51-uspgqWIL.jpg"
+              alt="atomic habits"
+              height="225"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/51pPn2LkI8L.jpg"
+              alt="the 4 hour workweek"
+              height="225"
+            />
+            <img
+              src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780671646783/magic-of-thinking-big-9780671646783_hr.jpg"
+              alt="the magic of thinking big"
+              height="225"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/41lFb7+HGKL.jpg"
+              alt="millionaire Fastlane"
+              height="225"
+            />
+            <img
+              src="https://kbimages1-a.akamaihd.net/191425a8-b4a8-4fba-9f1a-e8127c5b42cb/1200/1200/False/hard-times-create-strong-men.jpg"
+              alt="hard times create strong men"
+              height="225"
+            />
+          </div>
+          <dl class="big">
+            <dt>The 48 Laws Of Power</dt>
+            <dd>
+              - The 48 Laws Of Power draws on many of history's most famous
+              power quarrels to show you what power looks like, how you can get
+              it, what to do to defend yourself against the power of others and,
+              most importantly, how to use it well and keep it.
+            </dd>
+            <dt>Atomic Habits</dt>
+            <dd>
+              - Atomic Habits is the definitive guide to breaking bad behaviors
+              and adopting good ones in four steps, showing you how small,
+              incremental, everyday routines compound into massive, positive
+              change over time.
+            </dd>
+            <dt>The 4-Hour Workweek</dt>
+            <dd>
+              - The 4-Hour Workweek is the step-by-step blueprint to free
+              yourself from the shackles of a corporate job, create a business
+              to fund the lifestyle of your dreams, and live life like a
+              millionaire, without actually having to be one.
+            </dd>
+            <dt>The Magic of Thinking Big</dt>
+            <dd>
+              - The Magic of Thinking Big gives you several starting points to
+              develop and strengthen the most important trait of successful
+              people: believing in yourself.
+            </dd>
+            <dt>The Millionaire Fastlane</dt>
+            <dd>
+              - The Millionaire Fastlane points out what's wrong with the old
+              get a degree, get a job, work hard, retire rich model, defines
+              wealth in a new way, and shows you the path to retiring young.
+            </dd>
+            <dt>Hard Times Creates Strong Men</dt>
+            <dd>
+              - Hard Times Creates Strong Men examines what it means to be a man
+              in the modern world. This book examines what worked and what
+              doesn't work based on proven history instead of feelings.
+            </dd>
+          </dl>
+        </div>
+
+        <div class="card" id="honors">
+          <h2>Art</h2>
+          <div class="fakeimg" style="height: 200px">
+            <img src="" alt="225" height="225" />
+          </div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="values">
+          <h2>Values</h2>
+          <dl class="big">
+            <dt>Doing The Hard Work Especially When You Don't Feel Like It</dt>
+            <dd>
+              - Doing hard work even when it doesn't feel like it matters can
+              lead to personal growth and a sense of accomplishment. It also
+              sets a good work ethic and can lead to future opportunities.
+              Additionally, putting effort into tasks can improve skills and
+              build discipline.
+            </dd>
+            <dt>Belief And Mindset</dt>
+            <dd>
+              - Belief is important for mindset because it shapes one's
+              thoughts, attitudes, and perceptions. A strong belief system helps
+              to maintain a positive and optimistic outlook, foster resilience,
+              and provide direction and motivation in life. It can also
+              influence decision-making, behavior, and overall mental
+              well-being.
+            </dd>
+            <dt>Discomfort</dt>
+            <dd>
+              - Discomfort makes someone grow because it pushes them out of
+              their comfort zone and challenges their limitations. It forces
+              them to face new experiences and learn new skills, leading to
+              personal growth and development. Overcoming discomfort also builds
+              confidence and resilience, preparing one to handle difficult
+              situations in the future. It can also lead to new perspectives and
+              insights, as well as the development of new strengths and
+              abilities.
+            </dd>
+          </dl>
+        </div>
+
+        <div class="card" id="roleModels">
+          <h2>Role Models</h2>
+          <div class="fakeimg" style="height: 300px">
+            <img
+              src="https://lh3.googleusercontent.com/LCSnca3-s2aWQaNCbWSjVVzcCnrqL2d_1UMuB5jd-PTRvK3bUaa5vRG5ceZtIqSpRJRAWQ2Q4q3BlfkoglHPu0apo5S2T_RgfbmB5upZJvTbbOhrswAz04sxNYqjlw6NKpBNd8OcDC8o0byXi8c4KYMDX1uv9FVjGnW0SzT2rQFCb814vD2vOemZ_w94kMJGIaeYLX-KYdoHmfbKU8xAOHZsQGPSXAGxmobDkEpZEL8XBP7qX0Ca17cxyXPcCEi_303wRqF9QgnazXyC5aRKQAtYqWHxuSbWbhMlLv3JBxsp6LeWJpLZ6MqMTrMplRv2nhoWKSPbpB2fW2JG3w70RO4sVP7HFyRoHW1-rEqXoR0f6lHa1pkIYl7s0BOGJJPYD18wzXpnWMpE6uy1Q_XQzg3ZZlkYWLcy8IW0zgiUlQn1AF8LOWWUG5rT_0ulk8TDnKm6k6iRT1eUstpJADwiOHxaZT8B5Fy9U2udsnMdVbDoxzuRNb2-XfEDBGJ6FRhy6n5M4srrC0Nl_FyoSMPQ_MFrFqo4zqvZD5xJgQtsppi-HKP0H-YO8SZqFYAMTkFYQ4VyOnTAuxYZkq7ATSdjFCprIOUPfS0CcMRLl5sZzDkqgE047QkXQkPKFb87QJ0x0QIq_ExGC6SVpP1BorDSSAGmhT-41L8jB2sT40ZFmznlHZ-OYEIK4mW1D1IH6KZzU5-MLBjZXcNUPce9i5daVoVaUDYaZiVk_RbmKPWalKURfYu0bTI8k5wYyu4R-EaFxvkDi_kGgHRjE1x1YdgyEnQfxm2EjCc58tTUrzMcCvaV_dY_A5A9JtCNhoUwiuK3a9_zqXXDNTl0kchIVjWAVZ632LF7_vTfZd1I2mG2Shb6pZpEj_5iOmp69FnSvoVweMXVYcXcOuRhXtCjxebVrQI19neS7TJ9lEO5p2gZt-Bps2Vlxsd4J4ceVSdVS6h3Bhvu77ylhG1efeEUG37k7SZFig6iWFu_fQKM6UVPMtWvW6dMQMN5cIE9mVES-L0LjaLkDive0HGX0GxbW_YYtC3L=w640-h438-no?authuser=0"
+              alt="hamza"
+              height="225"
+            />
+            <img
+              src="https://static.wixstatic.com/media/a491ae_3608173b93d14dc288b9dfa1f8528135~mv2.png/v1/fit/w_940%2Ch_788%2Cal_c/file.png"
+              alt="iman"
+              height="225"
+            />
+          </div>
+          <dl class="big">
+            <dt>Hamza Ahmed</dt>
+            <dd>
+              - Hamza Ahmed is a youtuber that has amassed a following of over
+              1.5 million people. He is known for teaching young men about
+              self-improvement. The topic most touched upon is mental wellbeing
+            </dd>
+            <dt>Iman Gadzhi</dt>
+            <dd>
+              - Iman Gadzhi is a digital marketing entrepreneur and trainer. He
+              is known for teaching young people how to start and grow
+              successful businesses online. He preaches the importance of
+              entrepreneurship, marketing, and personal development. Through his
+              online courses, live events, and social media content, he provides
+              practical strategies and techniques for building a successful
+              online business and achieving financial freedom.
+            </dd>
+          </dl>
+        </div>
+
+        <div class="card" id="art">
+          <h2>Art</h2>
+          <div class="fakeimg" style="height: 200px">
+            <img src="" alt="225" height="225" />
+          </div>
+          <p class="big">...</p>
+        </div>
+
+        <div class="card" id="photoGallery">
+          <h2 alt="A collection of everyone that makes me happy">
+            Photo Gallery
+          </h2>
+          <div class="fakeimg" style="height: 1000px">
+            <img
+              src="https://lh3.googleusercontent.com/vtZFWlpYngrUCXY_h7qWAOVLxVqPJuw5ikUXGEvS4op9dHouXFaWmysa5MU-i_TNJi9M3jcsIO4qCEwxMlXWzcQoP8dd_9YGYtw2UHZQFJFPQhDYDoZyEIgHbt8Zmqf7oadYOZSj44y5Sf-axBNDAUPuQt9IxggIomjjIBfQfvLBxazX9efZ56KP7ucNRdcUaQ97F-lc49V0sgtvCYvpZaX6l6WMF0SluV3Gb9jzNOBBtJYjugqE8f3FJJSrExyGdiGNZhTO3H37si1cJBFLca7y9F6kZnE91yg0AFF_KNaou8qkxVmEM1DzhoKvCeg3o74kcm1GM7C33S1nxlR7v2oz-RmjUI93xTqpcD29L97x0v7xKWn_UbRSCnqlLFtbuO0XniMP_Zs617McDK0k1wJSHhGu-yfiKyWxUa4x0Kc7fVa29rImWrXv_9Dr_XYWYvBov3mdwWsqoHNpx9NkkAf6-qyb6STSZPP5P0eqfopELYMiZMrMAVS52dSsvqann3zxBJWiwTSVs5Oz5_hjCjj2n_xdgjzhmImOdC6J4ojoUNdPVxrBfFxZ4agbwNHj59wjrhGsl168hpQYRIOj7_d3EV18kot5G0fxzVz_Fzf7E4nDXKksQvvsd1Gm_AYpPy5bk01Zncmgr9DJdLAl5_RF2rfk5npztJCPSZiZ-nK84dCUDT5PgAcLWVxeYSvHJn3xw_hs6-6nrZKHx7UX1m7BO461JHvaZukPXENfs7BEU21ZbwZ4l7TBfmu7g1ja7ooM9bqyoRckO6h82Y3aWxuuvoCelLR6ofLtCvLCBad1Z5EQq4dZMXzEs9Oyex8AzpDwU-mqBrCLWUJEyTe102Rj05RSCSC7CIuMhB6eF9i4fKhJNHIkoP0Lgcw_UZUxvQyJFN_0Cv_uPuZp8BP3P3nxakwT8mFPaUp2cf_Qmlz4fXNd9kmEqR_bPEritbfUHFhBW1_iI3p-Az83lr52NO380DgfJ8rSYbfIRVAQoRmtqloy0RpyiCaPuz1j5ZpzQhOfegmVcGBqAbPTJHeCtyg=w1184-h1578-no?authuser=0"
+              alt="the fam on eid"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/tN6UZSUYLGKQDeau7DJW40zj0Korj__3XQ7NjtG_QbHMOVzEWA9mxqJbotkrV0Lr0KOhwrVwf1uz8L77ZYET_S2jvQu3ocdmonU5lxLuLkcUfzNAIrbp3lkMKkgKDrvbbcq4RvfmaCvOAow8jVgkQbVFaYXeN-8cPlDHTMd-NTscCCDAB28jPkvCHYY1De28jkN2WOcBGQ_-lyYn7yHjSnHGV0dcsHCT-BBMvLrE_ImlsbKPs_PHQuQ2-ixLTV4nJuke9F_u1at37pPQ7y3-NkK9QNkHoZSxsEyvBtebwRzMQwIvHcEUp0S9hjCiRBApOj1nm-kx90gcYnmb-knXFzQ-LA2fId3KpArHfPD87CXB0r8tB0nencSM2-huhvjAGXrQgAujUOek3SwDG2YpCPRJXg56naSoetyAMaPHeTEyp1YQyDsbVGunTlYsfiab6ElqZStUTU3tACjlUh6w8rY2Ba6RKErFMkMuiYCAPenjQP2yWpK46H3DZeOHyhGzkkkQG5awJkTy-NN4s52U8S92R3sEX3z3IwtjPJZnvJRX-4C-nanOslwSJoWQHMWnEhDyBx8inGAU9Aic9bG7ihICMKK7Zx1naY7nTVyb9KeneIY6b2bKc9xQDqvA-Hh1LvqpfeTnqahgyb3FKTIkDrzf8xDZ5BYBYCrd5zPv81nJEYfH3kP5eTvsYGm5_eHnLQFUaoXNvi3KiZG-qBnuwdqVfznTdgoIOg6uWPNfLCGDrvMnPNL7JQcRJID1Y9kar0i98ZBdKLGz_m6yn3twLWe09LV6RCoOGVORArmo4bhKh3Ft21FRXAZx9KDW86yLto-yX6M2qhQJeWrNGK2UM14Hofy-E_16XXHADPfj5KsMlVNJkPeT4wcd2z29NTtmjKO7Y6A4SJukeYFQ40KpL-Z0E4lbvN-AXKtNyugtoNzpikviqsDq91sdN6Ajpdoo8ngWutGERfBX5pt538U0vOEdmJPmq9ZPbGmp3pEOcZvehsuHVI4mRDPfdh31q4OWo7GcTMBvmssPR7X-pOtgnZs=w2104-h1578-no?authuser=0"
+              alt="the ahmed fam"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/rdtpmzYuZ5TvhjmlmE-OZJZt-tfAvJpB1FZcyGZq8ykE_ZMoOnzYhSWHNHJU9nwmpvPyO1STCvzhuA63dtB_mibUmdBXXPEeW-92iE5UX4nJnMuWfAwseu8HFier2Ufg9IQPHwE87lHgcWYzbQjp-SEZDg4ONASrHI7Yudg92FxCGcikNgqRR6_AYLSxl_WDKWlffOq-ysAkm36J1atRzbBSuxf71ogTZGk-lYcAEMAUDz24j3MfN0qYB2GpT6xE-nFZY-_LtsXowiUdT-_xd6vZAMdoWtdczTqTzTj7FJ0CegE42SlR9EZd-MMI_3OuJ5FwSPmSO2V1Miq_0VBwCkfxD2TmflE0pZHXrbhpEklcCt4QETBk8DZpqXo2mzDoX3ZrNjsFu_EuViIEAV1nNAsuhpWFfoLvQig_tOTS68qr3cfbM9MjoikQ744StSZeWidWl_EcsWfrA2SQ0It6kO7Lv8MVyUnnfOUrB-XmKr_6WueGsZBzBRByciw3o3t5GDxaeqSn7VKxhbg581Nsark-3l6ml695LzVRPpKIwxKSzCcrUToo50GPs-aWYj-iGCRE0eRbu6WhSMKOHtm6ToQZ5okZFqfsUeMfBVnOEXsLzxJ9uze2WvoKpuhGHO3LJtoEC3SM-DrJh8UOuChXFh-mPry40L2sHVDMZuh-858gtf5aq4zfsOFotzywQPkvDHwtpiIWq4nhIVKFPxDmglB8I-L4vD6ITu__kHq4qFTgc5Mww3uaH9c4AZ8UgUT2saMMfwelldNRcOd6pJdSOsUuEOrDlC3fc92PmvhRQ0GLvGVuca1BmzldjlDpvG52v_NRrJGzzJuGmNXPTgCL4fEsYKwyRBXkuFbCG8zKl5SFBapdPfqPQPvzXBtjLtZ0rdXFsK58aV73jDJ9qnnKNTGGr0rUPN6E0QDe_dxdcl0D7vk2PMK8f9GdgJE5aRKorq8fAEySCowjZiMY8Vn_sZsgRmEygIDENsIya-xEbZ8H8NzRW8k8ekwoGzOBOf2nw_d-a6HJ--wcRJOzzCUMcbo=w1184-h1578-no?authuser=0"
+              alt="nani and hanu aapi"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/_m6iXMPuOC1zEr453vT_Lw9QHYx9wBhR6TlGME5NOXSqTa66qSSs35iGk7ZQysYlVH2drVIBCxrp-Qqo9Epg-nDzSoGjaiy4N4BsNWicjw9CUOcq25jpq3t1Jw7Kp-0M4KsJ_S2il-rMtRJopilDRxyzUD1vpIMeXolKsHpxs9ufHiCQ-8LCv2PDwYziIWnzr0m_npmieprKUCJPOheRfIL6r-CqvIBCFyKcyoItxlbAwMpQMU9lEm6snM0S1D_aK4SL4RnASEV410LpSwB-Zb0Vk57lLvs1LySaaSmPThLr4g8bHOWzGj56XdL-xAEnhcwLZl-Z3W_dJsQMx_fmT-Pmv_nb-guKS3JQUnWmueYfyasgRZyKlUdawmcSXrQSN2UHOv_AYcM2bhWF8OI_F84_bpgH5HTZh--vpyIZc5hl4B6PFK44llRyDAfJezF1YPOKn62p7HbrNu3I3LL0CZ64Y_lTfrw8zJLOqRT1SZk5vinfhYf_SNKfqTbYf2bfcaUyu6XYJ1WxUEMCYrIkDDRByak166P0oQbdRmf7aKVMb67vnTpRN7Nlqs7Y3DgVYND5-7RDnE8JY0wIZGrGTT6Ddgk5iimWeUIBBODNEz9dhB_NqNoB75x176-iTxdQXaff6DUTbDm9FHFPwT5wdoUKE1hfgaiM2UWQLMgSolTlP_CKoGWP_vWWPtHpIb0RfnFyGsvPr5vpVuD-fMmP2BHYiK6dBtE_EUBl1rOM53QkB_Vqxg6ssodXlcFPg6zpXZHyxx4mwBl80TQPNqhBdioMM47QgFaMfvGAwnAzitAPzZxU2Di6xXNCfUelZY1LFnZPTDCE8IV_1VQjk7IC0ShxMa4ncoomC_0CZyzgCAWy7jLa3D2DwvxE9hEu0UNy0MhyJmJCK1LSTy0Ic71qn-bPjPNK99VZcl8-kzzji9qxqLrZBYtXGNA5ibWT8rv251oVFbjqXi-sXl_bsvSD5OVZ4GZrh8PN_pobI4lembfLc3GXE6O9fN7s8S7xTyLdCO0F1sO1kYFP4WW975fN2rs=w1184-h1578-no?authuser=0"
+              alt="yusuf"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/Dz4ay3bJ5bb50_kvkZoedFlh55bSmWBspbGORTVqEO2wdr5Nd3VJknxot_LO58ry_AVlBjr8wLbu-mt-dklWNdt0V-MF5QHdYcLDu5th7oGgufSPf83s1v3oC0r6rb_j8E3RgWzy5QhB2qXEwd6RfrmT9y-zsG3SeyHb43ULZjhJzwWLwbBQsRdWWrfStSOGA0cisIZi_nwoB9dCZTHqye2OiVYQonoOQ5-PsV0ZK_SIj8-TkGpSSra2owkGcs0HsxAOvadwNZq5JVzWdoA7DEXqwR1pyA3PBzWdKrLtKyyhmQTpJw0D1ntO0TBnT_4q1gU5vk5QAwZ1B9CTH3KqAb7ttD0qqn3VJLkL_Sanil0Y2Y7Q8U87t5BTouH2wHOcshRRTD6cgSRB7rOjRbOYnmGhP51UUvGSFNQA6xRBYbzKI8o_uLCm6y8Zi3Icf02Cg7xRHRU9CR-mOJ927nWfVCd7-MtJ-n2IIZx17lNEE_EFEBdijEw1k6--31yDVoyJWbgXPS9H8BUBq-BPGybnnmhVVrHP5Zvd5NsVtjF8OeuXiCRCZ127dZH1b6aInH4CMFPovpYQvYGZuB-bTMs8xh7uoLDLaqu8yURwceWlKSkSXHDdF-F3AGJIosYzN6vxMDo8skrz48Cq52jIjK5dYbzs1PmzfjDgdeI-kj6iX9Sh1FCg2pzEj3FWZ06ItBfHsMr3RdcBjJw9-ysEx1RPjFzY8bDuUq0gJ2RrCgxrvedfJzMtrZj4idCNpqkvyS7BtZv2uf8au_TjeEi_Bs8AzpjfKF02EtPAPqW2vxnQdPgI3LWDNSDyncdEUj3Gbw5p_RZgiCbLDJRf86YT5yqgSPf2WkM-0dmo822AzsE3ScN5r2aeAN8LQos0y8p2cZHlBWmyBLo_6WtQnxmL_522M6AjCmqzu-LjaO7CB-ql3cL4jgXlBZCBN3O9sdms74Ok0G0pFKHKez4nYF5jq-wVkZmDI5NhrDfEFQQGU_XNuTjik8pH1JOIN7tiisHvJtxvm_A3tHXcFPd4W8Uwmx1UeTA=w1036-h1578-no?authuser=0"
+              alt="the goofballs"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/a1WgKCAmK75oZh98HCyH5bF8WhW5jPV5ViEFGVoLelcbUnvl5jU2WaraZI5m0f19-I-ArSfkIxDXQew7GX2G6T1AXufSpZFd6zgSYA3yGDwjMIoSYb1ZeGKncaMVcsuv-eioSf_mV-rdyrw7g2c9dFMD6uIXt_LTHSnkQOj3Goe-O5p9ayG3P_IHkncgl5nx6CumB9K4RUTPIqK2TZanmdiMKYTW_Yfrq08XSXS3Z0dimlAyx2BYzPauI9xVk3YrE-i0I1oA88qsMGKUxKWA4nP2sUT4C8dU9ouHsF4b6fJp02AdufieFDYPdPeNeTb5CwBmOiGlXJYPrUsJsXOpkjUDhZnRAPhebCaeJuU3Wt7Y346QdfNPPlms2nqVNEnYxtM531lk2mkCY1Apim4dSwn3jPKecHG1629Qn2QkWEaGFi1zjipwK4F9TNBZnEUB1ewlle8AKzvr_6puuowA0gKxE4KGkN_mq6XtR3U6G2Ri4T9JKAN1l4J0936SFr46trdvvP4e6nPvHPaJ5B5gVbLtDdI4epo3eZo0vhmB8YjqshOdMmFaBEEJVsxHfixfKqpkgxLML_jUZXgxBElDa9ADNHm9VtNxY3nN4CGy3Xq21G_sdGG9wsM3R51HOD-B-GMvMtw2Gp2GJnJ23gc3esCGXZNKIrhCvGCCBXuDImxt-y8owlevY7ijcD10sWgKfTgmnC7Lo2cpDB0eIYcHxI-K7SfJh-fLmD821sjWnF8g94dlcmmjepPa_9W6iELYRs995OftiJnEhXrdat0TsyoOowYeRq4q7EGzZQdqPOveJtQL_a8TTnGPY90Ya9pBmQ_X2rX6p0-nAJcIJ-iUj8Xir6RlwB7MRO5gCPT7QQ18aQzjNLqmY4YffDmhmZeb8eVZEUczN4ZDDHl_xU6HUj0pRyU9iZ6MONfgSyiPBpBLad920OUQDWdG-Sh7IA_sA6T5lb1SbFUK28MKs3X_X-40uRHGoB2PG7tbfQjjQbRSofr2oTumZdxqXpwLFJqzs_OsgcJe0jijFUELHHXEBos=w1184-h1578-no?authuser=0"
+              alt="aaaaaapiii"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/vXId5Wm8uFb0ebkD-Poqp4SuuVPo4gGKbuNMUyQ5rAr24Ktvoe3ps_Q5zYtH5abc8NqpeR9BL0PXWOejJp_r9ixOENLbkaMWfSkrKpl4FF5xb06H1Ga3QKxEqmw_fhXqErzMI67e_RcurKzwgWnccUpe1UszW0VA-nOVCnAsDHTnX6aJ-S8mvdQF6cddrj0mphaQy059ybpUGzfVjAoJf0Ys9lYIJpEtkkmktM_cfskPFObiuqBm5mLmk04OV8eCYVbGEbTWrsJs0MfxZiywV9__DCL4NUYrk0X5-CxIRptCfEr06gcexX0OrKW2ovaVAGYwvxajpcWs5FtkMBF6zrjA79L2wXMQRDh2llTwmE0dqNwWn6nPNtQpuF_iTHILG6cV5Icy2w1gYyO0gSSb55HZ5410hgaWq_KsKOsyPhXFsvVXDJSFqCDxuugHDQnUncgWassoaG9UUoAEvJ4_3vJDYyQegAwqg3dRNRPrXWtd37hQtlsIkfYgWP6FqevI8LAXsom_VXPumcjstp6ZliK9ndQlWyPQzfaKHcrTTpLZCgG2t4dVb2I9BxEGQ4LIDKd5wU9tFI1AE71awf8r3kchCm4r5ngHJOrK3-HhCLpn7sOn1c_JrehJTy729308cA_3xXv3uS94IlfUBOwFm7w7DGHmiMsrj3wq9XJXloWKImtGgz733YLOvRON8VsR47rS1kqMPDX1e363VM0PnKELQ0BcQXHaB3APYMgFWRQiCzRU_C0wsZ5ZfD2TkKZWl-3Lo9blIVsjMzlBYAPi9EUW3V2z_ZKFoALETXNgqp9xjT6rEXh2Eam0owZDB3KauyugQ0qut24BKkds8sIqlk1DHH7scVd11B6S6CZZEEPSY7pZa9TW4rt4DGSn6hiFlgjCDPgSWphmHs6V8W5Ogx-VhilOTREgxRoL5me7xon4sSaveNeqDaMDW1RiJuPttNmEKvf6um9WB5eAwYZz-ecemT6gB5VkIx39CLsYxN9zSuBnD5NjNQ8nII0xHePbsf9AdVe2P2-rLLr9U56fTO4=w1184-h1578-no?authuser=0"
+              alt="bhaijaan"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/nOhrSXVFQL9WmC1WdzrTTWImH13P9SGESCKFJKh3kYT_zUCPot_1QaPpDFCCClnvIRrspK_v61AhvGBm3cbJqMD08zjl5aik8EBpzAvYT4Ajn7z7dnB7STfu-sUxVgcoHi_sXWE4B9bAg2AGmyndyt_VGuKrXgA9PgxrxcwxQcxnzamXPM9ihGdrw4YZPMJsLHhgx3wPIskOIJri9s19XObAwOh8xQ0vGN4TGpobs37xBrEt4zBrs2tDyQujCiLpzV3RFkmESiqJgZIH5qXhx3m5moQR-PnY3wLzW4HCsQhh9unwEVGqwzhTsQXkQ5MD2s_ioejWRI_XfBxXhq3pRDC_ytveivuleuh2dvlFvezGTFzH5_2grpzxu6ejaDH1byWx27TdoQAcG1rfDX5W1EiNeBZvyvJ-IrA2IVojHwYn5Td7vVnX-ikFEy8pDyKocwL1sh5ZW-Iqxns2fOQBr3lRbuHPL9ku0GpAusBAa5GxFJJd18uqyOCYRw3b41_155bVHxyeduNYiF-BNfwP1dTumT3EXC93Dd4W3Km4tHx8EdnWQEcs2NbkPoPl9g-8SPyydTBuL8b0UfYONs4Dn-EBmQZJmBBxz69qnpIxxW5fug6Vmc1SPhzQ2rFunnNxgVwA8h9qg4AI4NEWSfO6tn_qMyM_bZlXcl5YjJU5cdSQxYROiG8r8XYeVgAeQNEzYlD33bLFJCHQ2Bj6tUsE5YT1gfQKLj7ToPFyuEC-FOiWt3GqX5QXTPhPXrxtMMbHCpc1yOxMsNrOPCtk8PP28vXNB0_NN85cWYL517DzBau1-EWcBNVr2MDS9HLcUV6VqNdRpHRWvrUAmdEBa-lVKC2TnJ_akQVwszd0RNzM0GIUi50P-Aj1DqgiewvTQEoqFcdrl5vOumtvT-p5esUZMR2FB3SRdbUtsbAVA-xAU0JRG-w-WxfDUX3D3RHqXMrQU7lK_2gvd81zVbeX0O0ZyrMd8lrfzReFKgVBJZ3Qc9zal8eYuS7BaQtq5WMpcM67qovlQDZ0ltHbksBk22TLuws=w1184-h1578-no?authuser=0"
+              alt="ashley"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/fEAxQM7n6p9O_XRmjGoFfVV1MSJWg5prCfvj17BERsNnrYnghVbW_eu49_dGwRfEn02EzijdsEH-WE286Krbzzm4SKylg1-s7tNKxtAI0FcKv1PKrV7d6oqmo8ohKsmoPpYlyIDgYK6rB0FAxIxTBEAdQqY529yylgDDHuzV6ygo44mE_jZnPyetyv6aht2bqVMqlLmXYGtFyVbBSNJMWwuzY3YnzcELYhfx_rIw1AYwZdTs8GCmPksuumiuPD6luAjxjd1r2VoewEDCY8TzHJYVfSnep-1OptCaSJ1K_oEsJSyTttjJnx77d4G90D8APZsrXxnfe4PR5KtHG8qJQPGUR80t2ouZ_unLW0MtNYN4-ENRSyAUfAzcluvUs-0DUtTHP7RhByGWLj-lanGyYV5GbASsr3zoBqaFg0iLorVHp1oTAF88CfgocWhFqVjAkgCgQ640kh6wFVUHyGXVbMzvi6q0yeY7k6hXT-TTTTGn4zz3Axe0AAwutI7nPXFGX-SG8zfNmWDTLlnBuqrlFf_9UrIny_TaLCdE2tgeUSX3cMHoz-hTKQ2CGtO2xod49Kqeax0iOidP26GUxO42iR7dBFD4uyiu1-ALdI2f_Vb46MT3tn_EJ56jSOApsp2UvWKGltZRmGMmYctMo9wUhjnqRE7Kr5wOjXFzSjFT9azY2jO00VDvueOkpKaIqDSwd1KXXPXkBSzYzShkzc_5M1aOMvzFPfwlfksDTgyRHvR5dj-KrLbkxYYfQ_bUutFhJTgDIVxG0k3j1nJK9BLGO8jzyYwD0NYDfvN5rHSvkiPTSQra1npprfpo3KgqNt3ISq7GWiIMK2F8mHV3nYeN0CgetEnw0nHP_oMD32p9l7dOl3uPUoFSmgJNl8bS-VsyhD-i3ai9sxK0P_Kv2_G2CA7xu69utiC4y0JPO3OzddBAlHWFq4E3t3jM5wqdBUIF71xUfJcV02EZ4a8PzDj3TrvMW3k6FVe_FThMr2XjKdvx7LGBia1PSyaOXQ19u0rUmKPyjy4lL_ILxuTCVo8w3OM=w1184-h1578-no?authuser=0"
+              alt="sunbathing ashley"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/YMNlD3y-sV7a3KnEfwrXf0VqbImJ6Xz5EKbna1ZOYr4rOAvO2gh2PaOwFChJfoP_F8o0LUYnyRARdtcwWKpEzaErck1_NdwngJ15QDeq409Rjjta2S4_gweXTwmjXaPwvHqFRT9Kl8jLfixTWQlflrMOW_gcsmxvJaFrEQy_Y7CaEah0evtEDkRjtxaoQTm9XxIE82WxjO8U2FgkeQYn-eaKVMt-7-t3Ehw57r5aUVOOmjorO6DSY1G_LQTztS8ZginzF8hkS2sXJUSjHcaq4MtfU7taT1y-Ir5RQy6kEcEC9UZv-NqdUAJVl7aFJrkWdJj281oioeY3MURCndPpNRxQVHjj3fajZ11RjB-NUYojrdZ4D39m-Bm7Ta-OnUVTzW_EFBaur0zFiUCXT_dC_KwHovIfc7gHdw5f1M-VE9sd5IKZRbxBZj6TUyQpU7pBjDOnu3PFQ4ahx8y2DmKgVaG1fCC6Zz10wFIjy1VgawgS7gNJA7ucZM4h4V0p6yPjrOfupLZmvDEbM9MCKNR9H-6etidgE5JYXAjlDPfY_3sSplbDrCcXi10fDhvApfsMMLABTbNA3phBkR0G5_0dqOZP9-uQ38aKmG_wt9xjOsyn5fuPTdWK9yGm4Q5sFqw8YqgtSG93Lij6hPnyK2Y8t8AlSs3_BFIqpPd8xwyjuH4vlLqiL4qX2xGHgILeG76Y7k7BvptaHjJrzcaPewi4o4YHkDonBWSX8kAwj4RK1TETML7DDDNKyJmBEBoF2TrnWd_-qMBoF5fQgcxzYPvtU9_8N-q8RlxakeUxDyvYezkn0MxgfetIb3nAPgebP6S9F-NQZPgY1cSW_tsyjHMV8MBXuWZrBzQBT_t5YdS3Ikg3RjixvBwR3M8-MOuDMq8O1LsW7aYry2eSsa7LF7GTHRymVhFdkLmGti7jSFUvnb_1xs9k1yFx4iPfNzAIAW5lxo2yTE9vR2kGWRykssJrQxc9gsqFq1Utt0dnQ9xq_o4JD-qWxka20i2dDVZDE_sDZ0KPXHPrlLZRDpGc0UyQXoU=w1184-h1578-no?authuser=0"
+              alt="mom"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/sEeDOufg5BxUuibbzkaKSKJuwWpWIA88ztOt5DOuNVRb48thX73Ie0JkN6VEyfQzJBxz2a4ulXPHzazh-UhA6q6c3uimxrv8-m41cU1yRRzXtHSytbC3kXbioT9C6oHr_JJ0mH2HSBj6mDEavT7Sz4eaQF2EK69fqJbx-1uJBKdrbIhFuj9XJSsVzoWdDy8SG2MXY1iOvQGFeEfxIAhfTIBMi8bpyMpPIAvBPVA-1EcysMy_iBkhtXTB2CvMkOlYQ_F6zhLzfAXAaIkfvc4vaZOjmWdsvko2W6WWODM9MpYCuSsBR4lECmBO2wmn50jmODT_m7plf2YHt-iaC0HSIslcdMxIfzsbH9D14tYBf90ZMgJEEEy6aunmQ09JrKgPpJ0Ehws0g28PEgAZsI24KDE3nhVxHnf-FqKfQva11Giu6cFCyXsPq_y6fID7PD5DZla3h9tKjvwiXBU99Jps2SE_SQft_e7nQBxjwc8gQGEmk1Z16IPXnAPsp6AQxhalqPwHwIlhALDmhLDyUM-S4zn88trdXQ1fzsD8DowxDzMo0WEJUQGmVBWGQoBdct-docQ8vYTnRwi_LOnXBf1bc0AWOjIfgZFNIHEvN71N3VgoNyvNXjsY_HuujmmHMMl2CX6PCXa2Si6VYjUWxzSlHKz-QbzPFxaClvbiQPQ7Swtdvrvn9HH_sm6TfOTioaLPn94dh04vlKTxJgujAS-EvYqmSk7oxEYxZ5GWBBw1ATX5j6W0KauuoeABbEWCCPsudEfjZd87VsYLxLE_cm413zjs4XGf-FJrbahPw6KnWDG21T7O7XKV59h2g5a9Q9EKpw7gvO23EUkJI9bKxcOfFbj-Z8Pdbtm_iumh71BhrIJSccehfHvkr-TPZweTwE-Ia5mxyS-aWXIRbUXfOp0pwjihUaeUlMuAk5Z48wLkB2v-CgE3333sywungDnWb61e--VEXEUc8A1New1vPw7MF-iv99GHNDDhclUJ9qzK8AZYyM-8wS-VbJq1Hwq87yvgPTZBssYK9yHPKObnPCTm7Ik=w768-h1024-no?authuser=0"
+              alt="hibu and aloo"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/2JiFqIAm-6YUyYRsp1_jHEtxmbGm1mvzQWaXkKWnyYJZJklyS1yHITV_hSyz8Iqajvy4KZMR6y-pto7RqBNPfh7qO8vbGy8yVhmYuUZVH5XepwPkLsb2wW1TVcFOE6JCEOeAFaIRVRa60TXjBj7zWHE4nE07s04qGySsDF8uZYHFC-m2nQBd7KoTwZnvH08knbA0eDN028wrZMsbRbgwNrzEM23ZP75dMc1NcVR1lDIC4pcL48OEdTPAPTCROHCGcgix8FwUXQlxHe_4EnQV-pRUnmdER_NBK9aeIfyc_0g9RD5rDCdRvTMiLxm55npQ_kCRR-0mVDLnvJ1LTLcoWk9r9NopTQ9CRj6M3UAqOYVxpKz2YsQCsawVlVasB75xs95CL-G_iXnjgZsWEeAAN4S7LUgBiGPoGXVwX2fWFRdqwaTTyGVibqSRBQ4wNbClMf_cFkSi_AoNv6JMESmmb53zOyED-uLhKFeG-4K2T6b2uZ9iz4gInpIuYnsy8v_Zmkbi6OkalWpAUwl5Af1EbjS8OVlOa9f7EqRrQiqypRgOplrfpbCfzIrlyNVlaTgQ11x6f-kZQ9C1tXlLyn1IiWK9fgpett7BTMKrnTpbXPIoRzGTK3IN4j6xHTJkE_-ncZXw6gC2lPK8obqp_M5n-t1ExhklZpWyzJbkq9ttnjnqNQgl3TIKDzvab-le-vDwo_APSmt_qOOfjI1x56wq7mGOibYEkvWvaGFCJKSxqRJvt1Z2oeaBmys9fhSCBgLt9fBboiZc4ao9ldAQ2Ds8bR-E56pZFekEHlUV2vPiL6e9iRzBkI2E0tRQ4kBZqzVNROQGfBT1HuJbif0c5MeSgLGKh4PyBDGAb5UuUThr5IjuAcnisASE95MCg9AQxIcm3tZWoiUvXB0eccDs6l5k1USCgDluxBYT7FpyNV67rK4bTNk9AVKf8HuJsyTr7upMAvzwKpgwabS0d60nB3n4hHBLOXsPIDRbY0w_TfIt85FOkfWfrQdtNecU_1zCrsqtbpBxaMV5yPoi8H3OmLDKWjw=w768-h1024-no?authuser=0"
+              alt="saru aapi and ridu"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/rleAe5diQKiobjOxvAdJLmPknXIiGYOqezd0eQv_b8f0cv6Qp3w0iHG1ahJyrTjrK7NBSQVi0wYEHDI6IBT9pvVn4RGclE7M7Atavghlv4zjrrdtK-RmK1Xc0ecwYVA-yRef9EgqAQekUbW2xDGdENHpFWlQh8w3plBrHTHLr3oFBTzMlQ2g3Sop0l5apyNpSghQ-i9-AnFgJzU5Um-fhEkVJ2A_XH-75OD3n-19imXXBwxp0zscUkQQgGc8T278J2sASxHxjZZXvutFM9uBQYni6A39SVip8DrHoEt-A9iEZEyZQvf_XNMe4iPb49gxe-y185Gtyt7j2tn05gLkbXhxLec4XF3l-gMoUWwfA4Yow-vy-Dd_pgLGNQu0Og1s2oRo4ZkG5Sz4JiliU3tVWm6RrWq-3YaUEEBeHMQZi9RVDAst0sjOpxwOZsMEZXa_bYzxbAnwQ00xL8S8l72MopBZbt28NMcTsHCCZAMfmjHKloPqIMYIf5P6oky2a88flZCL7UrQGQUgPSHtMFJOh20vbCKYcbB3aY6-ZTUK2yDPnrmarykj-OyN7VeJM-duSzsmGTkup7J2ygljrIs_qPFs1pemy5iYnjIVzdyOJniVHAE2eGh1EfuF0OcFaV5mi9Kr0Y1y1-Ke5cfkBxFnBVECMwewPnLIC9mFIo7HuVbZrydK624JETX0BqGvj2Vx6wD-ArK1gF5zG4Fwi-XNRmj1TgjYgSB-uqkqLbX6RDRtblnmsZrE2ESsVIgx9eKak2nEkjEKiWg_WA_4Ee1TkAvnfQPF5l-lF6aR17uAcwbQlQTp7zx4Bvnsi0WpLF26ldLIJ1tpOVxKLBPQvOjbXJM42N42z_SCmg59NMuU7VUvVKITvCDAYAiaB44IRl82n3N4OqMaSV5HMRm0S3n5gUU3wTmrIk_qn4mYaPS4hNsJ-sZKpi1LWyrHAIkdO0Is-KFBZuIKsp1bVULvnLte36U9e0u5MHtRl9vfQN0xC_vgjVQRTcPS2gKGSgdw5rBNDFCIjuzyYi45tJ7NdO6NFXL7=w648-h1152-no?authuser=0"
+              alt="more yusuf"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/fyJlkiO4HTbrtTW8vsrgalgDll9h-uiXRsQZpQsekTGB-7U7zEjHCA-Rr09bEpXaC3VF5kKdb89I2zV9dI7tVtQna0OK-tiCk-5npJaRZHYDSTfzbBJjcbTfoIsLr8S59fewjz9Ex2r-cjZr2-0B7tMCUzGu58WmEl6HiDeuu8iMNYu7xJNIKgVjZwayf7OZ3cAfCSxs3nEGrTVe2bJXfK_MRwJR8t3Jy8ijnLE-MalawCAki92tqqx7BvOcKb7P0apeLfuJVpTy-ZJOvcgsGV3Bv8pLshGFliAXQhFVjaXQYgS7VxNhcjU8tfNZnbFBWAgeK9nqVEi6IgQg6_cmLKVyQ4LxwR1T1rNJJQR7ycUUCERlXJh0S7RzfTLz29IcK_2nz_a0kGMdJyz_LtaAUR46b2q1rIEvzz4QoT9CkkgkL103vAuJSvau0OgZ5AgHEkNZ7D-4Ctf-XrB4lzlLFSA3-mkjpQoOLUpnl3k3x4my5b3_l-yw09G_KSxd_CEHVif8l32w_YUufchdfN-VdmzQafc0xCQANvwOyrHxgq_nTRn4QLVOxwsyBVs8MbmJY82q1zr_z0PkVO_hv6ErIsPhhZ-wV-13K47slLFEWurkp_IWOVzzUNag0A1Q819PhRSAoHzRPo4YRVueqWwTnJsxf56nJF85pS-aQrTI3q5Ld6xjG7LPmE8AQgTCE60BZT8Z6HRTz0MCJK1e3Uzed5A1bsWqjmk-ZPkBVGNwPYnyH5MeGa-ZG0AYBHp-gm1HswzSH06IqtrNOO1-RGowGe_GQ0Mur8_nSiu5kG-tZwZnZY0-ZhO6qCyKReH_ne9rY9kws2QRH4zpyiMqadLQuBb-SEZXdjad9C3HjUt7wAqV5IuojGBMoje48euay91z7tpnsK3cGTExG9Hhy3gFNAfzr1BznXq1jm60ZBdasj0e2qlchXWb5bSSBHux03zhdO_szENfaRW-3xfj7liPiEtw76MZmtXBFEsRJNrA9rrdtr9jD3aUvEnJtXVX-Al9t2hOZVGCd47KysPizz6euGSG=w1600-h1200-no?authuser=0"
+              alt="glowup?"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/4uK3W7OEmCQNRS3UT5DwJ9YIX9UvMa2GyakI6vfInjgdRu-516aEdKtzj8iIGhAaDjRO2uh4CG42nb-4QXdxbvEhJnqpRUJaSLBBLHSkMCNqiuzSJZHY9fPt6FTehY22CKdyuXYoEaSS93IQUwKZqLhrpOGBjAW9c63QyztYH24xSRKoMy-EOkionuteXImwqsAecXs2h-TH6Lt2OS-jfSWaWBGPqWODWHOsSnj3Outf8ZMZ2EbpL7cEdLkg6_dWa79rEZBh0D8vMnnUL2wvxduE--g0URJbplZZ6XJr-p44Fho8PZsN7kM06wuwSMT1RE7abO9U8zAyl5I5xIpRqB6wv1mAzTJlpDRVi-vvDixBrNlRf7Xx2HnjWbARB7W8oZFH7U5XJcOPfOxTdHW7gg3-DoAYuV7dYxkQYH_bhQCrzitBr0qAJfg8AdnLn2ciWw4j-yWDpRkSaca2w29R0_WkhPNvxgswDBPWcAEwPMMPCXFLqnBnVh3OChhqdKUCy-cNo7sT8uJ05Gm6tiXPZeg2uwoQ-_Wd-ecDAOShKmN_ZITxOsVi9kZvVmo9qImh_prdkQ6hJy9F7-xFPbSCbo7V79lGmrqPm7jvI0W2gJEsOYwV9PYzz0nImI2bq7zJMMBjiULV5DAi3IGxfhlCtUwfpNYhV3BCiWoAAUSmXbq_lqsL_Tb3ENVFYnDa_wY1h5VUmjzCtASldNRPFIqNJJyA7C5SebyJg9zJR3et8e_KzTr80s-kJ4njM9ovq5JbTCPPuA368aBTSf3Y6oVZlkxQxULmUND8K1nFDW8-ZLB2Oqw91kqNmA6SQGPEj9e-Qe1Ug43Eda3vYgeHRBPa3kjs2zvCGpY1zzs7SYAxfkC9Nepaj7eT1fWGKFUqTWSDjiEDg7NdlfTidcn0rp5MVXGwOPn-2NF2FYZt4ZrUAPe4dHDhoYMDtHOpq4H0VOAF7Tlkt5-fK-GLCknitoriphoQYq6L7ryLxjM7OCfmD8ehxZc_JYJo_8UPVqdj4cblQauepr_uW_0v8-XBytT3-Wdz=w1280-h958-no?authuser=0"
+              alt="glowup."
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/Qj4g8tnttfBowcMFPiIntdAiXLBvxVN-8XFZUntm2mMe_exvCSvH3XzFWt68iE8rea6oU_JgC3OyZIlM3g7Z1B6D0PMNyXjPNvzO_zZh14lXSMjqqhcH3mdw2-FuOTKLjqrgF_idRmYbc4YUX-8BIa83IdF5YmB8f2gf5VoxJqUTneMP5VMIlQ-LP3TLqHrQa0HyNsCLJxAWHITa9KPJbyoJJalVWqXWt8NAoSAIVwV9K_h5Gnd642InuJEI97fWvsnuLgDT3Mjq2san9C5hcBXjgqkMYr6B3lpbLnYTMHgMKChr_VgVBWpJZAM9_nrY5KUYXVqM-8KvMpY8KERaGiOJesow3BMF627g7HCz61w-gXOxKvKr62Etyo8Q23TlZJHHt19YB6_SMDYMZuCgX9GjrmuoVopFznXPSQCt4n1Bj5I3eegVB5gCSXESXgJPYlEEAUmOyOfJGhm9by7ugjo0Tisz5meZ8zyO5pCFeByAVPPUkwZGmglQhdbEEZCPg6sdbtwzVGFe7HzA69ABHqI6HmfHfcDhb_ZHhXLeHO0ve3IGxFu4nr-4yaYlicMJzw0UWfzfdX_q3bLwLscAD07otJNZvfnPdvZ3Evy0IRN6WQUKhcMHTkU58PSemTlF3bz3t0hatkGu4yDxO1xwsgesdMKId4J87QKmV0zjRf_pZQsUvv74G5bK0z4rElBrvZkudSB816fevVn9aFTGdRPJy2TC4tIzn6cJz2b2mLxLkKmOznEbyiEkdq_5KFfDpRvtnzcB8o_cejef9gzV5n3G7RdDQVOLZosHOU2EsOEgSJUYTBRhpGpmrRSBiMChaglMoFD1s6RcxZmH_uFXkqq9pXRKbw82KHzevn9pyllKn9VpmDUm_8AfIWEevB8FZtAOz7jeUJ0fYuXLKtrlELyAWrsBLMnZzZlTEQpMg_QAX7ArGXxI6dpfkvLWxbSC67IfMeh3VLPKmANtoUTsc0NeS2qZ7JXiqKww930mw1C293AinlxXydKKn7IV_AGviqFWLlMc1cI_WGKluqJ5AvI=w2104-h1578-no?authuser=0"
+              alt="oldies"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/RwGqSeAqeUQ5nNYPrHXKNJhsDbQ3RNT29Jnx7wKVynbqeICXWqMm8ysQzNHLl7ZrQQ3Npig0OPXLK0AgeadQ6r6MDHsqTytj0rXqFlMsC1R0TwUIhFJx9TEVMTVEZx_6WnszslS-WEkWAj39eOHoqOWLEUUAaJpUJJA6KqSVXztr5oQj6tS3o33Xq42LsE2ZsCE9rCG_1DHV-uI6qOCWdjyFxP1Oqlnf0dmG-ua2POylJylDbI_dkpIXVBYrx1d0wIGqPsJZfnpKhJ4daEx9oKGP08-xv3DBY2JZ7wxZjtwu3vblt8VRdCdV6PbVXcr9Nt7CBN88sAHxthoWnbft73iB_32rg6XOdtEUtbbFTAF4W-sJ6OK0JpvfuRu-r0BNTiO5tNCkPiw31fTrqDj4jwdOkkTDqxXuAGCnrmtjKUCTygUl2IwK7UyJemDj8pUv1w66xZgN92SYeIzlNW5FJdynfhtz6jOJJJEarshmbi-Cgdz96a6XjmtoRkjJ3koy2ZwG2jzVzRwz8xTWyKQpiRvuX6SLcEmvgSZTFeLNVQBIXeA7SgsIBbVH2waIXctAyfivgE5bUd8H9alW8iHIjCAd9C2x3ankjCc-DYUmxHFsD5GaOlnfWQbznr6AHE3PDvYSOzBBGz9Un2zNchqJ0g_GBAL1WlmR012XY-UBXaapKXABoP4X7m5v9TkSZ34r3I52WgJuuwK-gPQtFp5gWkBtHJDSFvWgRoVA06fyJLAsLMrV98_2sP_QDxxunlzD3vJs2-GHlvm1kd1vP365EPlCSZL8lIMaixm_GzKapU_P-zsh0ECh8HteKVhSkCmX_-AKOpmdyRiPvvULvaSgJseGNgOdG8Z4PIzXcnpem48M6O_ekNuW1bt6sTU6VVNKWSWi63ivla_qqCMJuBlE_xD6EK4gMmHML4thWpxkqpmxMpX3s8ZWo1w18ZmD0eAtIDQuFijaOvYpdgnZx4LiAMwJXKS5Hnwg1C_jKEJhb86kXzlcKcirx01KZm0ZhJi9KeT5B1iOEuAo3Sa6HXkTuks=w1024-h679-no?authuser=0"
+              alt="girlieeeees"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/HY33e3zCq_TnwoxkoBlQuE3k0kHSYwGchWn9WPyuXAHCDGBs_Vduu4NB230SYIzrq3D2MYChYQIL_popFNXBuSVfXV2uDqZskrDbRWQtwtdFCdFFYbIhrtUq9SRvLfNfqrXXkiQYPGM_NCIA0ZCvARVcPTHnbE_lM8fD-DLpmzjIu2vsjAbXeMs6y1zL_QnCcHOT-tYm4MR8b6qFDwbf6ZnQAW91TDt7H4MWd4mp2zzGaWJvRxp_8rwRzK3cOm3LX8RKcsNnpvDvmgssz66FRLeJT_yXkxAOacbV13pcWNQInX9QKW6zC8LJzh2_l0k8nQdkZE8Vo5O92f0zLPyBArOxaPh8ydnvWT4B7Te4hfxNrGY95Oe7tM8KBGEIaz7z0wS2qjgarw_Xb_6NKguPXFh02-2hC0ix2xcYzqK6EXbc4FBze4rkZWy23MRobPi9VvP37HqIGaBfPJTLuMGLklxF9nzS-vCd7khTx5_ybexq7UudH1y9hbqhmzalcOee_mGMELeWseN_HhHz5Huf_0vtPeh_XrVjUHGl9E-gandEH2fYobF8QwBYVNAPwoMEFUBoqgzW-0MMLTsYT58dDV61GXqdmGVcJsUZ0sPKsJZIdTM8iPnqU-3rIiHvyVkEFaqrIl1l0FTh1tMKPue7CiK7Jiu_mOkcHjY3H2wJfgeyMGu0l-Vp1F2iIBtv0qD871bIGG0wj-1NnwkOd09-mA5k_0fW0mZcIcTLjelstgODt_MAl16bOoNqepb4OIWCtxoFrXvqudad6xH1JUWE32cbGYROgD6jd8SaUZ1RcljxR69XpWm1hcDbMrNIxvbZqqyT5ztYr9jaSX3iGRChySXjD48-4bDM6imucuK3HDExkoiMi72vDVCELBqRYzQf5K1hYukA4rV7Ix9xDvo93lxkvMMXvBP8FfSM04f8jYKDF7mj5tMM4HsCyYtmcCNJUQvWfv-Oh4x32b_HicTb2B7skSaFF6pglfO8Hdqdt__0TX8FEUraPiBBDGLSr6gE73_si4A9migjMcRk10K5JAI=w1184-h1578-no?authuser=0"
+              alt="zuko and iroh"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/sJcGiq9qajgVfbqTCWdHDqn8Jf5dVr7g2aCqGSyhv-vD6g0xbmsX4ZwPoQ2AC0u6IGGwAOfMSAIUxsUeyxORUrZrThZTQEXS1rv2wSV33Ywy3LQ44y65Vtj20TO_fIYTkkZ_eCRD80N8_t0ViM271F3Zy8SxDYloSibzIZRRfxcHTZEnmH1V0OoM6_rRZjA7C7XFmzjDFETCNopFPFTh_PVHRVjbDXqre-D5uq4fokO59W7wrQsL2B5ngT5wwhW3yOdb18939pdBDztRudGaQWXsaC9k5lgVOiM3RTzZ0WDXuh_fGoTemhaoO7ScaZfYPKgIkhxJS4CZ7G2dzLLPdO0F3C4psTIyX0PFEYYCsvaAkMRVn6LPVV1Zx8bNBG8_Cof2m4-V7ZRsUYaV_qJS-wRkRYTyGNBpsUERfBiSJcf5BC1qGY79OrVosVcBsv_CVb5nyfkfA1-nj_JgFs28pj4uoVtDTHYvMT8AXRoLglzDfoKSuosxu8BWB__gD_UdiLsz9NjDEtsDR52fujcDBOW48m09QupIL_ep60KKOQW3YjV2N45yNviXCJe0JmQOX-SbeNkqWVGTBdVmnvq_YGc2wQ-7enzcYNB5cba_TU3psOaOusTbPmagdpzzZcFUn0-Glp_t6Ab3YNqOx9sEihOLtcueDRXYAIjQGPMeX-izujDprxCCOT-KV6btDYuct5i5zsvn8VRegOlI2JoKcOAmkR-EFh6QLlr9c5OyB3awrw8jF2IcqVHhSWmzu-mEIZNNhbJJOXJ3igZZxnCWqEvVUoIXOmWZOqGQa1gpsGxU_0ED-OyeVJB3tgQJFQQtNbGjjsRdyoxG_JGbSt_lUHPJO2AYxBM4Oz4VDdRZd3ntgM1WG22m1cTIL9Lq93bN9lqy_uYZcufHyWbCe233O4-Tf_U3sPO7dxuogk3gzuFtcugc5wPETfp1De_88TiVmUaE1e7wjQ-EfQ6WD97iBy6L2E1g-ShjYGX-I-cYsnYJQVJIVQ2jZZZYGTDG7K0NFBgZqqI4SbEH8vav-IpPdZ8=w1184-h1578-no?authuser=0"
+              alt="bday"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/lOaHyZdObP-RYyB3jSKFvCKx6VGLh65Ell5CRCWnyC-V-6pE9q2PqRXF8Gqtcgr8AEzfEjUHYP83YCK24O53bLeoIMXBwhkqhLm-EIUzNYkSbRHE4oftV7RK6RiARS7Ea8SeAkEusf5t27NjzeQt0sHZ8aKwLpt3deTtWk5RV1PSanTApwMGstoKr9wE9tTJJqZBGQLi3S8a1yxwvJuTdVct1N1UfHjXOo7bkI54o7Xa7TwWpcxsDhA0LFUBhUYP-N4E06nIALtGn5R7Mt_iUliXWPl0phruukXx7z8vHPPzqgxYrskWt4R2hD0Ql1Qpulbt5kITL0aBAkvcBkyXqKhvTtvLv4PHyu32ifaufkVayaC6590F5Swe2ISwOLMfXh4v-OV8iZuWeF-gpbGDAor7XT3hTsnKSv3wgzU3Chh361_1xSptl-RU-Lye2OLDjPqpU1upYXf66_jakHJOm6bCuUWSqlxEV3-JFEKm_KJNNYWEIulPCWqWwu6525WfKCnv-PtgqYTFrb0iBg7sWGXfTqZgI8rRyLjIY5kyaG2LpfrNrTsgB9zzoRflCKo-rjdLrlGMaU4A4Ao-XFYKnkoyPF-F9NBluz8VDWTlls6D0bRG-BbHXHnJocoCew9_U0k1RFKcEJrBbROCiYeWgl2OvcMocCjC8gXMVWcmmGJyuZD4WOaBks_E9lLIXWcUApK_AZ2BFUzJo_olpA4d3GNIAmbWNF4xPBsm9TG12q8zWwkHUJtlCCR_eIT2deOXmNTCzZ5XeiMM1SZ5hSpx4vygDYN3Fv8wuftALd0r-CkVrM_fVg-VTb8yqLu9Vlj3irU6URUmFVWrPmy41CX3y2FKnE9_4zenRha-DpGhfZzj7cdeu6Ys_vNInfzh2f9w76KH3MHahsj8ZxuEASuNnpYq3_uCIFN_DqGydRtdL8WQkt8YPE32XiOwICJLJhcd7nN-Tw_DARfv4klonjz5u8_gLq69l5HM-jDs4gdoNAOaTNBrtrsZ0bd5dNXpDvQrmuQcY8-m0z99pNMniaNpzJM=w2104-h1578-no?authuser=0"
+              alt="the gang"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/N3Uj9SC2SWGa_7zvjTW42Pt4mzNExmF6GOtmcs2UgygRDgbVgKJSj9AYO65JigyqQB96huzsC94AXhpneAp7pPXTQxutUJUCyoPAGqIBdHiENRZE9jBEatulZask71xPHCl1__Lb6xSmzlWgrxxVPN69mVTeI23qmCEIGbIXvDUFG_3q5W4eU5_FsTBI9GIgg20hdKQTjRD5ApfZdnltytqr5icntecCAmngQJvfxQ6A2q84FWOKod8L6B0AcEry0_AzHNM_oM3mcGV507jQ3lks_BzaBaz4Tzg-wYTxW4O15lMBF2TV9dPyJQ4qp9jar7qJCbuTwtIF6MGc2lvc3rbnIi2eWlAePUjnS5ZoVr-VzB3wvuEMUAFTaGE7J1m9FfozHVGiybj6vw_brOSlW00onLWZfPSC-dvHHG3SPFU1Il_cAhLzIPgWdl0GGFFShqnT-H557fXiHqhCwFW0ubatNVi6BjQeigM99lWLjbTdKT7Y71HTSEccxx-3IOvheqZ-2A3QgUiVk0m0xmGp6akxanZePF7HIXRfkDxVFsq-YxHWBFaIazRKkosHQZAxDtZT7AwFaovOd97hsYKQWqqR6hmZjehG3f1ma8gs6xgbPtHOFhhHL_KGKzdCcdJPqahmnpUU2Z5j2ZH7Ny5Ou8RBF6POKVLMrauhJPdoEQJ2i0KwIr8LNcUGuHQy7ttSPfVERVCOLBUUZAbcR2c14TEi22CNNyVs39LKcH03FKnExsvp_0ZTV7-jxbXXv0ULIplxmMyOZkOLi5Ocd6tVifOvnrpxzkck3dTPORcUpIlbF9p-4ZgYDYf0mancvNdMRS5VV6Sac8EfE_8MPlc0Qlt1I4F_Z77BZrro0avIQLlh2sALjcGtn8Lpj-HR-5rD0Z0i9gQgXh66P9u_a3vhdcSMIdM3uYOgVCyVDyusZnihE6PZavm57Vv25jRk-pSDc3sdVZ-UsBfOyaewE4GQIrOy-IsM1JATu9pLBgN-aCOPw_pCuDf9g452K27vGGx1lWyKkxDx3phohF3CMf84RCI=w2104-h1578-no?authuser=0"
+              alt="willy"
+              height="225"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/pkI71K_eb9mc-cOFUAul4U8vVHrYcaUw3CL106AO20KamqJt8K8kGnqWfMjj4gtrEWVKXeJJB2GPmCL-dTfy2fXHX2_gLDgqetn8QltvTvG2NpWMNR75qHA_L3hQiRszRsZCkc4puiUZsw1MbDF6tLvEXCE3U-OJuHPEZUCmdIIK6hRBirkH7dFaE6U7UAYxtiotC_CwBf3hTNXRtDhXfUtnnfMqvUFsYLMO3lHWZL-gOB8j0CN7p1L5wNUCjT3m9S9YpJ2icobGrOlA81LKQl86JVVqG27cpWd0lEVYb_-q9rEke-W4rhdaFFjo20rdQoCmzRjpo7u_hXH75YzOFcw3F06oG0DCsADOhw9PRPBQHBQclg_Sowa3jFy2uhEBATmdkdPjIr_E0patbFFTPI_hkGHEaAwaV4ddfiE15u64Q14WFjS5DbkzjxCRrYyr5x8ZkpnybXr4dmmjbWzwZ3JX07OOnI3iJ4kAI2irPfL5QNY1OfTySJWyCGnkI-0BlL8vWAS1hPe6WdiyktOZ2WzMg3CqGV-SJbIuECcM3DmcqWtGV07WowRKWa1T9PH87gG6ESCqNfIihRv3DJFniAiEjJUQezMSjA0d18uMFZGIC-LbLDP37lQQnNyPXNncjlNLLvw12vsFVUxIs9DcOvIzi7LFz-mtpsI1kIM2aLIq_8sVUvstyy1XPBAP0iHH81lkKMY6Vppo3aBvhiqlzNMRNnUggfiiNFPEvz4nXOe6ovlJrrN-K1SKvyPOSarQ6EodjRDLHsuvbbvUpgtwKIYqe1b56giVP72xyYfcS3loPmpQN4wVk1B_tKyq_DSROejrOKOCVnCwnzRhgroMHE0LtmVZ_CektYGF4NERxiROSQp5v8tukGadmnWicIGe0pDzWFRkYh8lnwEUsPfm2kFEazBniR0fASXtmdd5rgMRGiFhWyRXxjRftJ0BGsWDWM8oeoAEAkDTPu1AtqfOteYlnnxfuE8HWaEdwlDElyzcHChHf-NyINwUTfnbuFIWm-VdsatTVd-SiegC8tNebplS=w1024-h768-no?authuser=0"
+              alt="india"
+              height="225"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" id="contact">
+      <h2>Contact</h2>
+      <p class="big">
+        <a href="mailto:25ahmeds@elmbrookstudents.org">School Email</a>
+      </p>
+      <p class="big">
+        <a href="mailto:sal.ahmed812@gmail.com">Personal Email</a>
+      </p>
+      <p class="big">(262) 629-6290</p>
+    </div>
+  </body>
+</html>
